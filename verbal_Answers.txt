@@ -1,0 +1,106 @@
+JavaScript Answers
+
+1. What is your favourite new javascript feature and why?
+
+Answer: Es6 Destructuring and Set() is quite helpful features which
+Javascript introduced. Use of destructuring in reactjs makes code
+More readable and optimized.
+
+2.  Explain an interesting way in which you have used this javascript feature.
+
+Answer : Fetching routing props by using destructuring : 
+               const {history, location : {pathname}} = this.props.
+
+And if we talk about Set then it gives us the best way to remove duplicates from
+an array.
+      let arr=[1,2,2,1,3] 
+     [...new Set(arr)]  // [1,2,3]
+
+3. Is there any difference between regular function syntax and the shorter arrow function syntax? 
+
+Answer :  We don’t need to bind the arrow function with ‘this’ like normal functions since arrow function takes the context of its lexical scope and we need not worry about putting return statement because arrow function provides concise code.
+
+4. What is the difference between ‘myFunctionCall(++foo)’   and  ‘myFunctionCall(foo++)’
+
+Answer :  No difference at all although both statements will throw a syntax error in js.
+
+5. In your own words, explain what a javascript ‘class’ is and how it differs from a function.
+
+Answer : Class in javascript is also a function. Its basically a function but with 
+ with expression and declaration. We declare properties inside the constructor
+ Of the class. There are two or three methods by which we can initialize class.
+ One method is by class expression const A = class{}
+
+
+
+
+
+
+
+
+ 
+
+
+
+                             CSS Answers
+
+1. In your own words, explain css specificity.
+       
+      Answer : CSS plays a great role to beautify and make interactive UI.
+       CSS makes html elements interactive and how we want to show those elements
+      on the screen. CSS3 has some really interesting features one of which that i like the
+      most is Flexbox. Flexbox is a great thing CSS came up with but there are more easily 
+     Handled and attractive options are available like bootstrap, material-ui.
+
+2. In your own words, explain, what is ‘!important’ in css.  Also how does it work?  Are there any special circumstances when using it, where it’s behaviour might not be what you expect?
+     
+     Answer :  If we declare two classes with same name and same property and one 
+      property has !important with it then property with ‘important’ will work. But there are some        
+       disadvantages with important if we use in large number of css styles.  I personally dont
+       recommend the use of important more likely instead we should see other solution like
+      adding class or using property with javascript.
+
+
+3. What is your prefered layout system: inline-block, floating + clearing, flex, grid, other?  And why?
+
+       Answer :  I always prefer flex and it seems very easy to me. Responsive issue became 
+        very easy after the introduction of flexbox. Very less line of code gives you interactive 
+        results. You need only 3 or 4 lines of code for centering elements unlike traditional css
+        doing transform and all that things.
+
+      
+4. Are negative margins legal and what do they do (margin: -20px)?
+
+
+      Answer :  Yes they are legal but we should be very careful about where and
+      why we are using it. Positioning is the great method of avoiding large negative 
+      margins.
+
+
+ 5. If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin from the <p/> tag will show up on the div instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
+
+
+     Answers:  It happens because css works on box modal and it is default behaviour of it.    
+     And to prevent we can user overflow or we can change the default behavior of p tag 
+     which is block and we make this into inline.
+
+
+          Unit Test
+
+ 1. What technologies do you use to unit test your react components?
+
+
+ Answer :  There are so many technologies for testing like jest,mocha,enzyme and 
+  chai. I mostly use jest in projects.
+
+2. Are there any pitfalls associated with this technology that have caused you difficulty in the past?
+
+
+Answer : I don’t find pitfalls but the main problem with this was that we have to eject
+ Project which is based on create-react-app because Jest does not work with create
+ React app.
+
+3. How do you test in your unit tests to see if the correct properties are being passed to child components.
+
+ Answer:  wrapper.find(component_Name).props() 
+
